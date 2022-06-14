@@ -1,7 +1,9 @@
-import React, { Component, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './UseEffectPractice.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
-function UseEffectPractice() {
+function UseEffectPractice(props) {
   
   const [renderCount, setRenderCount] = useState(0)
   const [color, setColor] = useState('white')
@@ -14,10 +16,14 @@ function UseEffectPractice() {
   useEffect(() => {
     upDateRenderCount()
   }, [color])
-
+  
+  const {showUseEffect, setShowUseEffect} = props
   return(
     <div className="UseEffectPractice">
-      <h3>useEffect Practice</h3>
+      <div className='practice-header'>
+        <h1>useEffect Practice</h1>
+        <span onClick={() => setShowUseEffect(!showUseEffect)} className='close-container'><FontAwesomeIcon icon={faMinus}/></span>
+      </div>
       <h4>This Component Has Rendered ( {renderCount} ) Times</h4>
       <button onClick={() => setRenderCount(0)}>Clear</button>
       <div style={{backgroundColor: `${color}`, transition: '.7s'}} className='color-cube'>Change Me!</div>

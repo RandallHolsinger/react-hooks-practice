@@ -3,17 +3,39 @@
   margin: 0px 20px 0px 20px;
 }
 
+body {
+  background-color: springgreen;
+}
+
 .practice-sections {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #fff;
   background-color: #2b2b2b;
+  box-shadow: 3px 3px 3px #000;
   margin-top: 5px;
+  border-radius: 10px;
   padding: 10px;
 }
 
 .practice-sections span {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+/* Global Classes */
+
+.practice-header {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.practice-header span {
   font-size: 2em;
   margin-right: 10px;
 }
