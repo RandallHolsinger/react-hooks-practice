@@ -22,7 +22,7 @@ function UseEffectPractice(props) {
     <div className="UseEffectPractice">
       <div className='practice-header'>
         <h1>useEffect Practice</h1>
-        <span onClick={() => setShowUseEffect(!showUseEffect)} className='close-container'><FontAwesomeIcon icon={faMinus}/></span>
+        <span onClick={() => setShowUseEffect(!showUseEffect)}><FontAwesomeIcon icon={faMinus}/></span>
       </div>
       <h4>This Component Has Rendered ( {renderCount} ) Times</h4>
       <button onClick={() => setRenderCount(0)}>Clear</button>

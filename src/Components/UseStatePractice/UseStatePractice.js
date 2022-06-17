@@ -19,7 +19,7 @@ function UseStatePractice(props) {
     <div className='UseStatePractice'>
       <div className='practice-header'>
         <h1>useState Practice</h1>
-        <span onClick={() => setShowUseState(!showUseState)} className='close-container'><FontAwesomeIcon icon={faMinus}/></span>
+        <span onClick={() => setShowUseState(!showUseState)}><FontAwesomeIcon icon={faMinus}/></span>
       </div>
       {/* using useState to change color properties */}
       <div className='box' style={{backgroundColor: color}}></div>

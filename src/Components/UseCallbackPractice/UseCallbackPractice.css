@@ -1,0 +1,11 @@
+.UseCallbackPractice {
+  background-color: #2b2b2b;
+  color: #fff;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px #000;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
